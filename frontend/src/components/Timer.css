@@ -1,0 +1,7 @@
+/* src/components/Timer.css */
+.timer {
+    font-size: 24px;
+    color: #333;
+    margin-top: 10px;
+    font-family: "Courier New", Courier, monospace;
+}

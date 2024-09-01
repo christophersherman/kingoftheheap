@@ -1,0 +1,201 @@
+:root {
+    --background-color: #faf8f1;
+    --text-color: #2b2b2b;
+    --primary-color: #565869;
+    --secondary-color: #f0eee4;
+    --accent-color: #828f8c;
+    --border-color: #e5e5e5;
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    height: 100%;
+    line-height: 1.6;
+}
+
+.App {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.Header {
+    background-color: var(--background-color);
+    border-bottom: 1px solid var(--border-color);
+    padding: 1rem 2rem;
+    text-align: center; /* Center the header horizontally */
+}
+
+.Navbar {
+    display: flex;
+    justify-content: center; /* Center Navbar content */
+    align-items: center;
+}
+
+.Navbar a {
+    color: var(--text-color);
+    text-decoration: none;
+    margin-left: 1.5rem;
+    font-weight: 500;
+}
+
+.Content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center the content horizontally */
+    padding: 1rem;
+}
+
+.TopSection {
+    margin-bottom: 1rem;
+    text-align: center; /* Center the top section content */
+}
+
+.MainContent {
+    display: flex;
+    gap: 1rem;
+    width: 100%;
+    max-width: 1200px;
+    justify-content: center; /* Center the editor containers */
+}
+
+.EditorColumn{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--secondary-color);
+    border-radius: 8px;
+    overflow: hidden;
+    max-width: 85%; /* Adjust the size of the editor squares */
+}
+
+.SettingsColumn {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--secondary-color);
+    border-radius: 8px;
+    overflow: hidden;
+    max-width: 25%; /* Adjust the size of the editor squares */
+}
+
+.EditorContainer {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.Editor {
+    flex: 1;
+    min-height: 300px; /* Make the editor slightly smaller */
+}
+
+.ButtonContainer {
+    padding: 1rem;
+    text-align: right;
+    background-color: white;
+}
+
+.SubmitButton {
+    background-color: var(--accent-color);
+    color: white;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.Sidebar {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.LintErrors, .Options {
+    margin-bottom: 1rem;
+}
+
+.Options button {
+    background-color: white;
+    color: var(--text-color);
+    border: 1px solid var(--border-color);
+    padding: 0.5rem 1rem;
+    margin-top: 0.5rem;
+    font-size: 0.9rem;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+}
+
+.Footer {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    text-align: center;
+    padding: 1rem;
+    border-top: 1px solid var(--border-color);
+}
+.DailyProblem {
+    background-color: var(--secondary-color); /* Match the theme with a subtle background */
+    border: 2px solid var(--accent-color); /* Add a border with the accent color */
+    border-radius: 8px; /* Rounded corners */
+    padding: 1rem; /* Add padding inside the rectangle */
+    box-shadow: 0 4px 6px rgba(23, 21, 21, 0.1); /* Add a subtle shadow for depth */
+    margin: 1rem auto; /* Add margin for spacing */
+    max-width: 1000px; /* Optional: Limit the width of the problem box */
+    text-align: left; /* Ensure text is aligned properly */
+}
+
+.DailyProblem h3 {
+    margin-top: 0; /* Remove top margin from the heading */
+    font-size: 1.5rem; /* Adjust font size */
+    color: var(--primary-color); /* Set the heading color */
+}
+
+.DailyProblem p, .DailyProblem Latex {
+    font-size: 1rem; /* Adjust font size */
+    line-height: 1.5; /* Improve readability */
+    color: var(--text-color); /* Set text color */
+}
+
+.FlipButton {
+    background-color: var(--accent-color); /* Accent color for the button */
+    color: rgb(255, 255, 255);
+    border: none;
+    padding: 0.5rem 1rem;
+    margin-top: 1rem;
+    font-size: 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    display: block; /* Ensure the button appears below the content */
+    width: auto; /* Auto width for better button sizing */
+    transition: background-color 0.3s;
+}
+
+.FlipButton:hover {
+    background-color: #0c8b6a; /* Slightly darker shade on hover */
+}
+
+.AdditionalDetails {
+    margin-top: 1rem; /* Space between the content and additional details */
+    background-color: var(--background-color); /* Slight contrast */
+    padding: 0.75rem;
+    border-radius: 4px;
+    box-shadow: inset 0 2px 4px rgba(2, 2, 2, 0.05); /* Inset shadow for detail box */
+}
+
+.runButton {
+    background-color: var(--accent-color);
+    color: white;
+    border: none;
+    padding: .75rem 1.5rem;
+    font-size: 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 1rem;
+}

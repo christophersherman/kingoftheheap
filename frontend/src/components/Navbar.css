@@ -1,0 +1,29 @@
+/* src/components/Navbar.css */
+.navbar {
+    background-color: #333; /* Original navbar color */
+    border-bottom: 1px solid #e0e0e0;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.navbar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 20px; /* Closer link spacing */
+}
+
+.navbar ul li {
+    margin: 0;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: white; /* Change link color to white */
+}
+
+.navbar ul li a:hover {
+    text-decoration: underline;
+}

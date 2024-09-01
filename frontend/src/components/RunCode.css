@@ -1,0 +1,20 @@
+/* src/components/RunCode.css */
+.run-code-component {
+    margin: 20px 0;
+}
+
+.run-code-button {
+    margin: 10px 0;
+    padding: 10px 20px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.output {
+    margin-top: 20px;
+    background-color: #f5f5f5;
+    padding: 10px;
+    border: 1px solid #ddd;
+}
